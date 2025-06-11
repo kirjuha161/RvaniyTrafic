@@ -1,7 +1,7 @@
 import subprocess
 import time
 
-WIFI_INTERFACE = "Беспроводная сеть" # Имя интерфейса Wi-Fi
+WIFI_INTERFACE = "" # Имя интерфейса Wi-Fi
 INTERVAL_OFF = 2  # Время ожидания после выключения (в секундах)
 INTERVAL_ON = 10  # Время ожидания после включения (в секундах)
 
@@ -21,9 +21,9 @@ def wifi_off():
 
 if __name__ == "__main__":
     while True:
-        print("Отключаю Wi-Fi...")
+        print("Wi-Fi On...")
         wifi_off()
         time.sleep(INTERVAL_OFF)
-        print("Включаю Wi-Fi...")
+        print("Wi-Fi Off...")
         wifi_on()
         time.sleep(INTERVAL_ON)
