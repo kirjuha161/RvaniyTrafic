@@ -37,6 +37,6 @@
 
 ```python
 WIFI_INTERFACE = "сеть wifi"
-INTERVAL_OFF = 5
-INTERVAL_ON = 120
+INTERVAL_OFF = 5 (в секундах)
+INTERVAL_ON = 120 (в секундах)
 ```
